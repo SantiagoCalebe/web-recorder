@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Recorder</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Advanced Web Recorder" class="logo">
+            </div>
+            <a href="https://github.com/santiagocalebe/web-recorder" target="_blank" rel="noopener" class="github-link">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="github-icon">
+                    <path fill="#ffffff" d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"></path>
+                </svg>
+            </a>
+        </header>
+        
+        <div class="controls">
+            <div class="mode-selector">
+            </div>
+
+            <div class="select-group">
+                <div class="select-wrapper">
+                    <label for="audioSource">Audio Input</label>
+                    <select id="audioSource" class="select">
+                        <option value="">None</option>
+                        <option value=""></option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button id="startBtn" class="button primary">Start Recording</button>
+                <button id="stopBtn" class="button danger" disabled>Stop Recording</button>
+                <button id="downloadBtn" class="button" disabled>Download</button>
+            </div>
+        </div>
+
+        <div id="audioWarning" style="display: none; background-color: rgb(0, 0, 0); padding: 10px; margin-top: 10px;">
+            <strong>Atenção:</strong> Gravação de áudio não é compatível com o modo de gravação de janela.
+        </div>    
+
+        <div id="preview-container">
+            <div class="no-preview"></div>
+            <video id="preview" autoplay muted playsinline></video>
+            <video id="cameraPreview" autoplay muted playsinline></video>
+        </div>
+
+        <div id="timer" class="timer">00:00</div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,7 +1,8 @@
-![logo](https://github.com/user-attachments/assets/02724b44-ea60-4655-a730-244b8c97a7e1)
+![logo](https://github.com/user-attachments/assets/b9de0495-c726-4571-8a75-7eda856f1a7c)
 
 <div align='center'>
-  <img src="https://github.com/user-attachments/assets/aa79c29d-0eaf-4ec1-8bd4-3e6876284e21" alt="sublogo" width="800">
+
+  <img src="https://github.com/user-attachments/assets/ea3b7e8b-9745-4869-a325-3c460cc8f836" alt="sublogo" width="800">
 </div>
 
 <h2 align='center'>A web-based recorder, ad-free and recordings up to 24 MBPS.</h2>
